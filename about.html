@@ -1,25 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About - Redline Consulting</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redline Consulting Group | Operational Insight. Strategic Protection.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%), url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.2);
+        }
+        .nav-link:hover {
+            color: #ef4444;
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #dc2626;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Header / Navbar -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="container mx-auto flex items-center justify-between px-6 py-4">
-      <a href="/" class="text-2xl font-bold text-red-600 hover:text-red-700">Redline Consulting</a>
-      <nav class="space-x-6 text-gray-700 font-medium">
-        <a href="/" class="hover:text-red-600 transition">Home</a>
-        <a href="/about.html" class="text-red-600 font-semibold border-b-2 border-red-600">About</a>
-        <a href="/services.html" class="hover:text-red-600 transition">Services</a>
-        <a href="/contact.html" class="hover:text-red-600 transition">Contact</a>
-      </nav>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-red-600 text-white text-sm py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-phone-alt mr-1"></i> 24/7 Support: (902) 449-5244
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
     </div>
-  </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="Redline Consulting Group Logo" class="h-9 mr-3">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium">Home</a>
+                <a href="#services" class="nav-link font-medium">Services</a>
+                <a href="about.html" class="nav-link font-medium">About</a>
+                <a href="#clients" class="nav-link font-medium">Clients</a>
+                <a href="#contact" class="nav-link font-medium">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
 
   <!-- About Content -->
   <main class="py-20 bg-white">
