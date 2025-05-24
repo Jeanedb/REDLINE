@@ -1,162 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us - Redline Consulting Group</title>
-  <style>
-    /* Reset and base */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    a {
-      color: #ff4c4c;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Container */
-    .container {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Heading */
-    h1 {
-      font-weight: 700;
-      font-size: 2.8rem;
-      margin-bottom: 0.4rem;
-      color: #ff4c4c;
-    }
-
-    /* Subtitle */
-    .subtitle {
-      font-size: 1.1rem;
-      font-weight: 400;
-      margin-bottom: 2rem;
-      color: #aaa;
-    }
-
-    /* Sections */
-    section {
-      margin-bottom: 3rem;
-    }
-
-    /* Team Grid */
-    .team-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-    .team-member {
-      flex: 1 1 250px;
-      background-color: #1e1e1e;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #ff4c4c33;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .team-member:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px #ff4c4c99;
-    }
-    .team-photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 3px solid #ff4c4c;
-    }
-    .team-name {
-      font-weight: 700;
-      font-size: 1.2rem;
-      margin-bottom: 0.25rem;
-      color: #ff4c4c;
-    }
-    .team-role {
-      font-weight: 400;
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 0.75rem;
-    }
-    .team-bio {
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .team-grid {
-        flex-direction: column;
-      }
-      .container {
-        margin: 2rem 1rem;
-      }
-    }
-  </style>
+  <title>About - Redline Consulting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="container">
-    <h1>About Redline Consulting Group</h1>
-    <p class="subtitle">Your trusted partner in security, investigation, and consulting services</p>
+<body class="bg-gray-50 text-gray-800">
 
-    <section>
-      <h2>Our Mission</h2>
-      <p>
-        At Redline Consulting Group, we are dedicated to providing professional, ethical, and innovative consulting services
-        tailored to meet the unique needs of our clients. Our team leverages decades of experience in military policing,
-        criminology, and security to offer reliable solutions that prioritize integrity and client success.
-      </p>
-    </section>
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <a href="/" class="text-2xl font-bold text-red-600 hover:text-red-700">Redline Consulting</a>
+      <nav class="space-x-6 text-gray-700 font-medium">
+        <a href="/" class="hover:text-red-600 transition">Home</a>
+        <a href="/about.html" class="text-red-600 font-semibold border-b-2 border-red-600">About</a>
+        <a href="/services.html" class="hover:text-red-600 transition">Services</a>
+        <a href="/contact.html" class="hover:text-red-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>Our Vision</h2>
-      <p>
-        To be the leading consulting group recognized for excellence in security advisory, investigative expertise,
-        and community-focused solutions across Canada and beyond.
-      </p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-extrabold mb-4">
+          About <span class="text-red-600">Redline Consulting</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+          Redline Consulting has been delivering elite physical security solutions since 2008. Our mission is to provide tailored, cutting-edge security strategies that protect your people, assets, and reputation.
+        </p>
+      </div>
 
-    <section>
-      <h2>Meet the Team</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <img src="https://via.placeholder.com/120" alt="Jean-Edouard Bourque" class="team-photo" />
-          <h3 class="team-name">Jean-Edouard Bourque</h3>
-          <p class="team-role">Founder & Military Police Consultant</p>
-          <p class="team-bio">
-            With over 10 years in the Canadian Armed Forces as a Military Police officer and a background in criminology and psychology,
-            Jean leads Redline Consulting Group with dedication and insight into security and legal advisory.
+      <!-- Company Story & Mission -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div>
+          <h3 class="text-3xl font-bold mb-6">Our Story</h3>
+          <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+            Founded by seasoned security professionals, Redline Consulting began with a simple vision: to empower organizations with proactive security strategies that adapt to evolving risks. Over the years, we've partnered with Fortune 500 companies, government agencies, and community organizations to make security seamless and effective.
+          </p>
+          <p class="text-gray-700 leading-relaxed text-lg">
+            We combine industry expertise, innovative technology, and a client-first approach to design customized solutions that meet the unique needs of every client.
           </p>
         </div>
-        <!-- Add more team members here if needed -->
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=800&q=80"
+            alt="Team Meeting"
+            class="rounded-lg shadow-lg object-cover w-full max-h-96"
+          />
+        </div>
       </div>
-    </section>
 
-    <section>
-      <h2>Why Choose Us?</h2>
-      <p>
-        Our commitment to ethical practices, authentic client relationships, and comprehensive understanding of both military and civilian security environments
-        sets us apart. We work closely with each client to develop strategies that are effective, realistic, and sustainable.
-      </p>
-    </section>
+      <!-- Our Core Values -->
+      <div class="mb-20 text-center max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold mb-12">Our Core Values</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="bg-gray-50 p-10 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <h4 class="font-semibold text-2xl mb-4 text-red-600">Integrity</h4>
+            <p class="text-gray-700 text-lg">We operate with transparency and honesty, ensuring trust in every partnership.</p>
+          </div>
+          <div class="bg-gray-50 p-10 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <h4 class="font-semibold text-2xl mb-4 text-red-600">Excellence</h4>
+            <p class="text-gray-700 text-lg">Committed to delivering top-tier solutions that exceed expectations.</p>
+          </div>
+          <div class="bg-gray-50 p-10 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <h4 class="font-semibold text-2xl mb-4 text-red-600">Innovation</h4>
+            <p class="text-gray-700 text-lg">Embracing cutting-edge technology to stay ahead in a dynamic security landscape.</p>
+          </div>
+        </div>
+      </div>
 
-    <section>
-      <h2>Contact Us</h2>
-      <p>
-        Interested in learning more or scheduling a consultation? Reach out at
-        <a href="mailto:jeanedbourque@gmail.com">jeanedbourque@gmail.com</a>
-      </p>
-    </section>
-  </div>
+      <!-- Leadership Team -->
+      <div class="text-center max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold mb-12">Meet Our Leadership</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="John Doe"
+              class="rounded-full w-36 h-36 mx-auto mb-6 object-cover border-4 border-red-600"
+            />
+            <h4 class="font-semibold text-2xl mb-2">John Doe</h4>
+            <p class="text-red-600 mb-4 font-semibold">Founder & CEO</p>
+            <p class="text-gray-700 text-lg max-w-xs mx-auto">
+              With 20+ years in the security industry, John leads Redline with passion and vision.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Sarah Lee"
+              class="rounded-full w-36 h-36 mx-auto mb-6 object-cover border-4 border-red-600"
+            />
+            <h4 class="font-semibold text-2xl mb-2">Sarah Lee</h4>
+            <p class="text-red-600 mb-4 font-semibold">Chief Operations Officer</p>
+            <p class="text-gray-700 text-lg max-w-xs mx-auto">
+              Sarah ensures our operations run smoothly, prioritizing client satisfaction and efficiency.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://randomuser.me/api/portraits/men/76.jpg"
+              alt="Michael Smith"
+              class="rounded-full w-36 h-36 mx-auto mb-6 object-cover border-4 border-red-600"
+            />
+            <h4 class="font-semibold text-2xl mb-2">Michael Smith</h4>
+            <p class="text-red-600 mb-4 font-semibold">Head of Security Consulting</p>
+            <p class="text-gray-700 text-lg max-w-xs mx-auto">
+              Michael brings deep expertise in risk management and security assessments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-20 py-8">
+    <div class="container mx-auto px-6 text-center text-gray-600 text-sm">
+      &copy; 2025 Redline Consulting Group. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
